@@ -1,18 +1,20 @@
-## Getting Started
+# 📚 ContaBanco
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um projeto simples em **Java** para treinar a sintaxe básica da linguagem.  
+O programa simula a abertura de uma conta bancária, solicitando dados via terminal e exibindo uma mensagem de confirmação ao usuário.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🚀 Como funciona
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O usuário informa:
+- Agência (`String`)
+- Número da conta (`int`)
+- Nome do cliente (`String`)
+- Saldo inicial (`double`)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+E o sistema retorna:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```typescript
+"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, 
+sua agência é [Agência], conta [Número] e seu saldo [Saldo] já está disponível para saque."
