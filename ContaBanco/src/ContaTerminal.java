@@ -5,24 +5,27 @@ public class ContaTerminal {
         // Scanner para ler do terminal
         Scanner scanner = new Scanner(System.in);
 
-       // 1) Agência (texto)
-System.out.print("Por favor, digite o número da Agência: ");
-String agencia = scanner.nextLine().trim();
+        System.out.println("==================================");
+        System.out.println("   BEM-VINDO AO BANCO JAVA       ");
+        System.out.println("==================================");
 
-// 2) Número da conta (inteiro)
-System.out.print("Por favor, digite o número da Conta: ");
-String numeroEntrada = scanner.nextLine().trim();
-int numero = Integer.parseInt(numeroEntrada);
+        // 1) Agência (texto)
+        System.out.print("Por favor, digite o número da Agência: ");
+        String agencia = scanner.nextLine().trim();
 
-// 3) Nome do cliente (texto)
-System.out.print("Por favor, digite o nome do Cliente: ");
-String nomeCliente = scanner.nextLine().trim();
+        // 2) Número da conta (inteiro)
+        System.out.print("Por favor, digite o número da Conta: ");
+        String numeroEntrada = scanner.nextLine().trim();
+        int numero = Integer.parseInt(numeroEntrada);
 
-// 4) Saldo (decimal)
-System.out.print("Por favor, digite o saldo: ");
-String saldoEntrada = scanner.nextLine().trim().replace(",", ".");
-double saldo = Double.parseDouble(saldoEntrada);
+        // 3) Nome do cliente (texto)
+        System.out.print("Por favor, digite o nome do Cliente: ");
+        String nomeCliente = scanner.nextLine().trim();
 
+        // 4) Saldo (decimal)
+        System.out.print("Por favor, digite o saldo: ");
+        String saldoEntrada = scanner.nextLine().trim().replace(",", ".");
+        double saldo = Double.parseDouble(saldoEntrada);
 
         // Montagem da mensagem com concatenação (incluindo String.concat)
         String mensagem = "Olá ".concat(nomeCliente)
@@ -37,6 +40,7 @@ double saldo = Double.parseDouble(saldoEntrada);
         // Saída final
         System.out.println();
         System.out.println(mensagem);
+        System.out.println("==================================");
 
         scanner.close();
     }
